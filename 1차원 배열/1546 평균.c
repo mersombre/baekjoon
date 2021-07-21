@@ -22,7 +22,8 @@ int main() {
         newscr[i] = ((double)scr[i]) / max * 100;
 				// scr[i]를 double로 형변환해줬기 때문에
 				// newscr[i] 자리에 그대로 scr[i]를 쓸 수 없다 => double형인 새 배열 만들어줌
-        sum += newscr[i];
+        // scr[i]에다가 죄다 double 갖다 붙이면 오류남
+	sum += newscr[i];
     }
 
     printf("%.2f", sum/n);
